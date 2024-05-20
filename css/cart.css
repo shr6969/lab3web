@@ -1,0 +1,154 @@
+.cartTab {
+    position: fixed;
+    right: 0;
+    top: 70px; 
+    width: auto;
+    max-height: calc(100% - 70px);
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    transform: translateX(100%);
+    transition: 0.3s ease;
+    padding: 20px;
+    box-sizing: border-box;
+    display: none;
+    flex-direction: column;
+    z-index: 1000; 
+    overflow-y: auto;
+}
+
+.cartTab.show {
+    display: grid;
+}
+
+.cartTab.visible {
+    transform: translateX(0);
+}
+
+.cartTab h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.cartTab .listCart {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.cart-item {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+}
+
+.cart-item-details h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.cart-item-details p {
+    margin: 5px 0;
+    color: #888;
+}
+
+.cart-item-details button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.cart-item-details button:hover {
+    background-color: #d32f2f;
+}
+
+.cartTab .btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartTab .btn button {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    height: 40px;
+    width: auto;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover, .dropdown-content a:focus {
+    background-color: #ddd;
+}
+
+.btn button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: #005f6b;
+}
