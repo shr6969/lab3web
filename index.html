@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchPoint shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.png" class="logo" alt=""></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="#home">Home</a></li>
+                <li><a href="#products-id">Products</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="#footer">Contact</a></li>
+                <li><a href="#signin.">Sign In</a></li>
+                <li><a href="#cart"><i class="far fa-shopping-bag"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <section id="modal">
+        <div class="modal-content">
+            <span class="close_adv" id="closeAdv">&times;</span>
+            <p id="advTimer"></p>
+        </div>
+
+        <div id="nonModalWindow" class="non-modal-window">
+            <div class-window-content>
+                <h2>Subscribe to our newsletter and get 10% off your first purchase</h2>
+                <ul>
+                    <li id="agreeWindowbtn" class="agree-btn">Agree</li>
+                    <li id="declineWindowBtn" class="close-btn">Decline</li>
+                </ul>
+                <span class="close" id="close">&times;</span>
+            </div>
+    </section>
+
+
+
+    <section id="home">
+        <h4>Trade-in-offer</h4>
+        <h2>Super value deals</h2>
+        <h1>On all our products</h1>
+        <p>Save more with coupons & up tp 70% off! </p>
+        <button a href="shop.html">Shop now</button>
+    </section>
+
+    <section id="filter">
+        <div class="filter">
+            <button onclick="loadProducts('all')">All</button>
+            <button onclick="loadProducts('wilson')">Wilson</button>
+            <button onclick="loadProducts('babolat')">Babolat</button>
+            <button onclick="loadProducts('head')">Head</button>
+            <button onclick="loadProducts('yonex')">Yonex</button>
+        </div>
+    </section>
+
+    <section id="products-id" class="products">
+        <div id="products" class="container"></div>
+    </section>
+
+    <footer class="footer">
+        <h4>Follow me:</h4>
+        <div class="social-links">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <ul>
+            <li><i class="fas fa-envelope"></i> Email:<a href="mailto:sofiahruba1129@gmail.com">sofiahruba1129@gmail.com</a></li>
+            <li><i class="fas fa-phone"></i> Phone number: +420-722-563-000</li>
+        </ul>
+        <p>&copy; 2024 Sofiia Hruba</p>
+    </div>
+    </footer>
+
+    <script src="js/advertisement.js"></script>
+    <script src="js/subscription.js"></script>
+    <script src="js/products.js"></script>
+
+</body>
+</html>
