@@ -155,16 +155,22 @@ function removeFromCart(index) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-            const cartIcon = document.getElementById("cart-icon");
-            if (cartIcon) {
-                cartIcon.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    document.querySelector(".cartTab").classList.toggle("visible");
-                });
+    const cartIcon = document.querySelector(".icon-cart");
+    if (cartIcon) {
+        cartIcon.addEventListener("click", function (e) {
+            e.preventDefault();
+            const cartTab = document.querySelector(".cartTab");
+            if (cartTab) {
+                cartTab.classList.toggle("visible");
             } else {
-                console.error("Cart icon not found in the DOM.");
+                console.error("Cart tab element not found.");
             }
+        });
+    } else {
+        console.error("Cart icon not found in the DOM.");
+    }
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const closeButton = document.querySelector('.cartTab .btn .close');
