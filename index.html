@@ -6,7 +6,10 @@
     <title>MatchPoint shop</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+
 </head>
 <body>
     <section id="header">
@@ -18,8 +21,15 @@
                 <li><a href="#blog">Blog</a></li>
                 <li><a href="about">About</a></li>
                 <li><a href="#footer">Contact</a></li>
-                <li><a href="#signin.">Sign In</a></li>
-                <li><a href="#cart"><i class="far fa-shopping-bag"></i></a></li>
+                <li><a href="#signin">Sign In</a></li>
+                <li>
+                    <div class="icon-cart"></div>
+                        <a href="#" id="cart-icon">
+                            <i class="fa-regular fa-cart-shopping"></i>
+                            <span>0</span>
+                        </a>
+                    </div>
+                </li>
             </ul>
         </div>
     </section>
@@ -64,6 +74,32 @@
         <div id="products" class="container"></div>
     </section>
 
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart"></div>
+        <div class="btn">
+            <div class="dropdown">
+                <button class="dropbtn">Sort</button>
+                <div class="dropdown-content">
+                    <a href="#" class="sort-name-asc">Name (A-Z)</a>
+                    <a href="#" class="sort-name-desc">Name (Z-A)</a>
+                    <a href="#" class="sort-price-asc">Price (Low to High)</a>
+                    <a href="#" class="sort-price-desc">Price (High to Low)</a>
+                </div>
+            </div>
+            <button class="close">CLOSE</button>
+            <button class="checkOut">CHECK OUT</button>
+        </div>
+    </div>
+
+    <div class="charts">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <div>
+        <button id="scrollTopBtn" class="scroll-top-btn" onclick="scrollToTop()" title="Go to top">&#8593;</button>
+    </div> 
+
     <footer class="footer">
         <h4>Follow me:</h4>
         <div class="social-links">
@@ -82,6 +118,8 @@
     <script src="js/advertisement.js"></script>
     <script src="js/subscription.js"></script>
     <script src="js/products.js"></script>
-
+    <script src="js/charts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
