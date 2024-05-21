@@ -1,0 +1,58 @@
+[
+    {
+        "category": "wilson",
+        "image": "pictures/wilsonblade.webp",
+        "name": "Wilson BLADE 98 V9",
+        "price": "259$",
+        "description": "Super racket."
+    },
+    {
+        "category": "wilson",
+        "image": "pictures/wilsonultra.webp",
+        "name": "Wilson ULTRA 100 V4",
+        "price": "249$",
+        "description": "Super racket."
+    },
+    {
+        "category": "wilson",
+        "image": "pictures/wilsonclash.webp",
+        "name": "Wilson CLASH 98 V2",
+        "price": "249$",
+        "description": "Super racket."
+    },
+    {
+        "category": "babolat",
+        "image": "pictures/babolatpurestrike.jpeg",
+        "name": "Babolat PURE STRIKE 98",
+        "price": "289$",
+        "description": "Super racket."
+    },
+    {
+        "category": "babolat",
+        "image": "pictures/babolatpureaero.avif",
+        "name": "Babolat PURE AERO",
+        "price": "289$",
+        "description": "Super racket."
+    },
+    {
+        "category": "babolat",
+        "image": "pictures/babolatpuredrive.avif",
+        "name": "Babolat PURE DRIVE",
+        "price": "269$",
+        "description": "Super racket."
+    },
+    {
+        "category": "head",
+        "image": "pictures/headspeed.jpeg",
+        "name": "Head SPEED",
+        "price": "299$",
+        "description": "Super racket."
+    },
+    {
+        "category": "yonex",
+        "image": "pictures/yonex.jpeg",
+        "name": "Yonex VCORE 98 Tour",
+        "price": "279$",
+        "description": "Super racket."
+    }
+]
