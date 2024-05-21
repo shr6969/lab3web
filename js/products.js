@@ -154,9 +154,16 @@ function removeFromCart(index) {
     updateCartDropdown();
 }
 
-document.getElementById("cart-icon").addEventListener("click", function (e) {
-    e.preventDefault();
-    document.querySelector(".cartTab").classList.toggle("visible");
+document.addEventListener("DOMContentLoaded", function() {
+            const cartIcon = document.getElementById("cart-icon");
+            if (cartIcon) {
+                cartIcon.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    document.querySelector(".cartTab").classList.toggle("visible");
+                });
+            } else {
+                console.error("Cart icon not found in the DOM.");
+            }
 });
 
 document.addEventListener("DOMContentLoaded", function() {
